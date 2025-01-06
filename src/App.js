@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import Login from './components/Login';
 import ChatRoom from './components/ChatRoom';
 
-const socket = io('http://localhost:8080');
+const socket = io.connect('http://localhost:8080/');
 
 const App = () => {
     const [username, setUsername] = React.useState('');
